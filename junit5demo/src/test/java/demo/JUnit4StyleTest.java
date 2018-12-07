@@ -1,25 +1,18 @@
 package demo;
 
-import static org.junit.Assert.*;
+/**
+ * The JUnit 5 backward compatible for JUnit 4
+ */
+import static org.junit.Assert.assertEquals;
+
 import org.junit.After;
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
 
-public class JUnitDemo {
+public class JUnit4StyleTest {
 	@Test
 	public void a_normal_testcase() {
         assertEquals(2, 1 + 1);
-	}
-	
-	@Test
-	public void a_failed_testcase() {
-		fail("Not yet implemented");
-	}
-	
-	@Ignore
-	public void an_ignored_testcase() {
-		fail("This case will be ignored.");
 	}
 	
 	@Before

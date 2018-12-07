@@ -14,26 +14,21 @@ public class JUnitDemo {
 	
 	@Test
 	public void a_failed_testcase() {
-		fail("这个测试将会失败");
+		fail("this is a failed case");
 	}
 
-	@Test
-	public void 也可以使用中文作为测试名() {
-		fail("这个测试将会失败");
-	}
-	
 	@Ignore
 	public void an_ignored_testcase() {
-		fail("这个测试不会失败，而是会被忽略.");
+		fail("this case is ignored.");
 	}
 	
 	@Before
 	public void setUp() {
-		System.out.println("[仅仅演示目的]测试开始. ");
+		System.out.println("[demo]run before each case. ");
 	}
 	
 	@After
 	public void tearDown() {
-		System.out.println("[仅仅演示目的]测试结束 ");		
+		System.out.println("[demo]run after each case. ");		
 	}
 }
